@@ -1,0 +1,78 @@
+@extends('layouts.app')
+@section('content')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Manutenção</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastrar Manutenção</h1>
+
+    <form method="POST" action="{{ route('insertManutencao') }}">
+        @csrf
+
+        <!-- Hidden field to store the id_equipamento -->
+        <input type="hidden" name="id_equipamento" value="{{ $id_equipamento }}">
+
+        <!-- Description -->
+        <label for="descricao_manutencao">Descrição da Manutenção:</label>
+        <textarea name="descricao_manutencao" id="descricao_manutencao" rows="4" cols="50" required></textarea>
+
+        <!-- Observation -->
+        <label for="observacao">Observação:</label>
+        <textarea name="observacao" id="observacao" rows="4" cols="50"></textarea>
+
+        <button type="submit">Confirmar</button>
+    </form>
+</body>
+</html>
+@endsection
