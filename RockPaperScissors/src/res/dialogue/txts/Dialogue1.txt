@@ -1,0 +1,3 @@
+<html>An orange robot stands still on the arena.</html>
+<html>"A human? Your intellect is nothing compared to my calculations."</html>
+<html>"Your chance of winning against me is only 1.0, I suggest you give up."</html>
