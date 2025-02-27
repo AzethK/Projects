@@ -1,0 +1,3 @@
+[submodule "JS-AmazonProject"]
+	path = JS-AmazonProject
+	url = https://github.com/AzethK/JS-AmazonProject
