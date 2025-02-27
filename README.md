@@ -9,8 +9,3 @@ HUP -
   (Português) Projeto de gerenciamento de patrimônios do Hospital Universitário, foi escrito utilizando PHP e Laravel. Foi desenvolvido em dupla com um amigo.
   (English) Project of property management of the University Hospital, was written using PHP and Laravel. Was developed by me and a friend.
 
-**JS-AmazonProject**
-
-  (Português) Projeto de frontend desenvolvido durante um curso de JavaScript.
-
-  (English) Frontend project developed during a JavaScript course.
