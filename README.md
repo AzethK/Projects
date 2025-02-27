@@ -14,3 +14,8 @@
   
   (English) Project of property management of the University Hospital, was written using PHP and Laravel. Was developed by me and a friend.
 
+**JS-AmazonProject**
+
+  (Português) Projeto de frontend desenvolvido durante um curso de JavaScript.
+
+  (English) Frontend project developed during a JavaScript course.
